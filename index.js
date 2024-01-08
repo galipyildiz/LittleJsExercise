@@ -26,7 +26,7 @@ async function main() {
 }
 
 async function getWordList() {
-  let data = await fetch("/Resources/tr-word-list.txt");
+  let data = await fetch("./Resources/tr-word-list.txt");
   let text = await data.text();
   let lines = text.split("\n");
   return lines;
